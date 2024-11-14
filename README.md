@@ -1,2 +1,5 @@
-# cooptimize_safety_performance
-This is the project website for the paper Cooptimizing Safety and Performance with a Control-Constrained Formulation. The implementation of the case study in the paper will be released soon. 
+# Cooptimizing Safety and Performance with a Control-Constrained Formulation
+arXiv link: https://arxiv.org/abs/2409.06696
+
+- To run our method, run ```boat2d_experiment/boat2d_brt_ctrl_cons_oc_driver.m```
+- To run the state-constrained method, run ```boat2d_experiment/boat2d_brt_state_cons_oc_driver.m```
