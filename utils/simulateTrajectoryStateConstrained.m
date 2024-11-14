@@ -1,10 +1,6 @@
 function [state_traj,ctrl_traj,aux_value_traj, value_traj] ...
     = simulateTrajectoryStateConstrained(grid_vfunc_aux, data_vfunc_aux, data_vfunc, ...
     deriv_vfunc_aux, dyn_sys, state_init, tau, dt, goal_condition, traj_idx)
-% Inputs
-%   state_init: initial state, not including the aux state z 
-% Update Notes
-% 8/19/24 - cleaned up to work with the boat2d brt oc rollout test script. 
 
     state_dim = grid_vfunc_aux.dim - 1; 
     grid_vfunc_with_time = createGrid([grid_vfunc_aux.min(1:state_dim); tau(1)], ...

@@ -6,8 +6,8 @@ function [vfunc, min_z_index_arr] = AuxVFunc2VFunc(grid, data, tau)
 % Outputs
 %   vfunc: actual value function, dimemsion (state dim, time dim)
 %   min_z_index_arr: the index of z^*, dimension same as vfunc
-% Important Note: typically vfunc is parameterized by (t,x), but here we 
-% do (x,t) following helperOC's convention
+%   Important Note: typically vfunc is parameterized by (t,x), but here we 
+%   do (x,t) following helperOC's convention
 
     g = grid;   
     state_dim = grid.dim - 1;

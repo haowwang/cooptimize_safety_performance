@@ -1,9 +1,6 @@
 function [state_traj, ctrl_traj, value_traj, value_safety_traj] = simulateTrajectoryCtrlConstrained(grid, ...
     dyn_sys, data_v1, data_v2, deriv_v1, deriv_v2, opt_ctrl_v1, initial_state, ...
     tau, dt, v1_threshold, traj_idx, goal_condition, gamma, use_cbf_constraint)
-% note: deriv_v1 is taken with respect to time in addition to state
-% Update Notes
-% 8/19/24 - cleaned up to work with the boat2d brt oc rollout test script. 
 
     tInit = tau(1);
     tMax = tau(end);
